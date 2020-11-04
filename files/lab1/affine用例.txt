@@ -1,0 +1,9 @@
+待加密明文：
+明文1：Life is a journey, not the destination, but the scenery along the should be and the mood at the view.
+明文2：Time goes by so fast, people go in and out of your life. You must never miss the opportunity to tell these people how much they mean to you.
+明文3：Accept what was and what is, and you will have more positive energy to pursue what will be.
+
+待解密密文：
+密文1：ne jobm og ne elmx zekfg ox qeuxnkoxg kxf ruojf rzofamg ox iknmzg. jotm, weu aobm qm lzmgguzm, o kjge weu qozkyjm!
+密文2：fex'n rm ktzkof ne gheen k goxajm hezgm. ihkn kreun rmoxa kjexm kxf rzkbm? weu ykx yzw kjj nhm ikw, run weu ykx'n rm kxazw. weu hkbm ne ae nhzeuah nhm fkwg ihmx xerefw ykzmg kreun on ne imjyeqm klljkugm kxf tjeimzg.
+密文3：nhm ge-ykjjmf lmzgognmxym qmkxg hmgonknoxa, ghzoxcoxa, ikxnoxa ne aobm ul 99 noqmg, run kn jkgn weu ae ex. nhm ge-ykjjmf lmzgognmxym og geqmnoqmg vugn kxenhmz xkqm et hkzf gullezn.
