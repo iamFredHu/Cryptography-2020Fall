@@ -651,7 +651,7 @@ void getString(char *str, int len)
     }
 }
 /**
-*打印ASCCI码
+*打印ASCII码
 */
 void printASCII(char *str, int len)
 {
@@ -739,8 +739,7 @@ int readStrFromFile(char *fileName, char *str)
     }
 
     int i;
-    for (i = 0; i < MAXLEN && (str[i] = getc(fp)) != EOF; i++)
-        ;
+    for (i = 0; i < MAXLEN && (str[i] = getc(fp)) != EOF; i++);
 
     if (i >= MAXLEN)
     {
