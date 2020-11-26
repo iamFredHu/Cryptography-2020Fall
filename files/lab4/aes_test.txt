@@ -1,0 +1,33 @@
+***** CBC测试1 *****
+CBC key1: zaq1xsw2cd3vfr4
+
+
+CBC IV1: 1qaz2wsx3edc4rfv
+
+
+CBC Plaintext1: thisisjustfortestthisisjustfortestthisisjustfortest
+
+
+***** CBC测试2 *****
+CBC key2: 4rfv3edc2wsx1qaz
+
+
+CBC IV2: qwertyuiopasdfgh
+
+
+CBC Plaintext1: securitysecurity
+
+***** CTR测试1 *****
+CTR key1: zaq1xsw2cd3vfr4
+
+CTR Counter(IV)1: 1qaz2wsx3edc4rfv
+
+CTR Plaintext1: thisisjustfortestthisisjustfortestthisisjustfortest
+
+
+***** CTR测试2 *****
+CTR key2: 4rfv3edc2wsx1qaz
+
+CTR Counter(IV)2: qwertyuiopasdfgh
+
+CTR Plaintext2: securitysecurity

@@ -739,7 +739,8 @@ int readStrFromFile(char *fileName, char *str)
     }
 
     int i;
-    for (i = 0; i < MAXLEN && (str[i] = getc(fp)) != EOF; i++);
+    for (i = 0; i < MAXLEN && (str[i] = getc(fp)) != EOF; i++)
+        ;
 
     if (i >= MAXLEN)
     {
@@ -770,11 +771,30 @@ void deAesFile(char *key)
     }
 }
 
+/**
+ * 对字符串进行PKCS7填充
+ */
+int PKCS7Padding(unsigned char *str)
+{
+    int remain, i;
+    int len = getlen(str);
+    remain = 16 - len % 16;
+    for (i = 0; i < remain; i++)
+    {
+        str[len + i] = remain;
+    }
+    str[len + i] = '\0';
+
+    return len + remain;
+}
+
 int main(int argc, char const *argv[])
 {
 
     char key[17];
+    char iv[17];
     int klen;
+    int ivlen;
 
     int cos = 0;
     printf("************************$声明信息$****************************\n");
@@ -795,6 +815,19 @@ int main(int argc, char const *argv[])
         else
         {
             printf("你输入的密钥为：%s\n", key);
+            break;
+        }
+
+        printf("请输入16个字符的初始向量IV：\n");
+        getString(iv, 17);
+        ivlen = strlen(iv);
+        if (ivlen != 16)
+        {
+            printf("请输入16个字符的IV,当前IV的长度为%d\n", ivlen);
+        }
+        else
+        {
+            printf("你输入的IV为：%s\n", key);
             break;
         }
     }
